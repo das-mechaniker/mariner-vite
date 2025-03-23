@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectMariner Sidebar</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        .sidebar {
+            width: 280px;
+            background-color: white;
+            height: 100vh;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #e5e7eb;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #0f172a;
+            display: flex;
+            align-items: center;
+        }
+        .logo-icon {
+            margin-left: 8px;
+            color: #0f172a;
+        }
+        .search-container {
+            padding: 16px;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: #f3f4f6;
+            border-radius: 8px;
+            padding: 10px 16px;
+            width: calc(100% - 32px);
+        }
+        .search-icon {
+            color: #9ca3af;
+            margin-right: 10px;
+        }
+        .search-text {
+            color: #9ca3af;
+            font-size: 16px;
+            font-weight: 400;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 16px;
+            color: #4b5563;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 0;
+        }
+        .menu-item:hover {
+            background-color: #f9fafb;
+        }
+        .menu-item.active {
+            background-color: #f3f4f6;
+            color: #1e293b;
+        }
+        .menu-icon {
+            margin-right: 12px;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+        }
+        .menu-item.active .menu-icon {
+            color: #4b5563;
+        }
+        .user-section {
+            margin-top: auto;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #e5e7eb;
+        }
+        .user-avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 4px;
+            background-color: #1f2937;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .user-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .user-name {
+            font-weight: 500;
+            font-size: 16px;
+            color: #1f2937;
+        }
+        .user-role {
+            color: #6b7280;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="header">
+            <div class="logo">
+                ProjectMariner <span class="logo-icon"><i data-lucide="anchor" size="24"></i></span>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="search-box">
+                <span class="search-icon"><i data-lucide="search" size="18"></i></span>
+                <span class="search-text">Search...</span>
+            </div>
+        </div>
+
+        <a href="#" class="menu-item active">
+            <span class="menu-icon"><i data-lucide="home" size="20"></i></span>
+            Home
+        </a>
+        
+        <a href="#" class="menu-item">
+            <span class="menu-icon"><i data-lucide="book-open" size="20"></i></span>
+            Education
+        </a>
+        
+        <a href="#" class="menu-item">
+            <span class="menu-icon"><i data-lucide="file-text" size="20"></i></span>
+            Documentation
+        </a>
+        
+        <a href="#" class="menu-item">
+            <span class="menu-icon"><i data-lucide="message-square" size="20"></i></span>
+            Prompt Library
+        </a>
+        
+        <a href="#" class="menu-item">
+            <span class="menu-icon"><i data-lucide="cpu" size="20"></i></span>
+            Agent Library
+        </a>
+        
+        <a href="#" class="menu-item">
+            <span class="menu-icon"><i data-lucide="flask-conical" size="20"></i></span>
+            Labs
+        </a>
+        
+        <a href="#" class="menu-item">
+            <span class="menu-icon"><i data-lucide="message-circle" size="20"></i></span>
+            AI Chat
+        </a>
+        
+        <a href="#" class="menu-item">
+            <span class="menu-icon"><i data-lucide="search" size="20"></i></span>
+            Enterprise Search
+        </a>
+
+        <div class="user-section">
+            <div class="user-avatar">DU</div>
+            <div class="user-info">
+                <div class="user-name">Default User</div>
+                <div class="user-role">User</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons after page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>

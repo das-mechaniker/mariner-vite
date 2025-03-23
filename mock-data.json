@@ -1,0 +1,739 @@
+{
+  "users": [
+    {
+      "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+      "email": "admin@example.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "admin",
+      "avatarUrl": "https://i.pravatar.cc/150?u=admin@example.com"
+    },
+    {
+      "id": "3c23f806-5cfe-4fd3-bd1e-c5c1b98d8f95",
+      "email": "editor@example.com",
+      "firstName": "Editor",
+      "lastName": "User",
+      "role": "editor",
+      "avatarUrl": "https://i.pravatar.cc/150?u=editor@example.com"
+    },
+    {
+      "id": "9a1d5e14-d2de-4865-a77e-5793b9b11aca",
+      "email": "user@example.com",
+      "firstName": "Regular",
+      "lastName": "User",
+      "role": "user",
+      "avatarUrl": "https://i.pravatar.cc/150?u=user@example.com"
+    }
+  ],
+  "auth": {
+    "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMmUxOWYyZC05YjJhLTRkMWEtYWE1Ny01Nzc1NDE2MmMzNTQiLCJpYXQiOjE2OTAwMDAwMDAsImV4cCI6MTY5MDAxMDAwMCwicm9sZSI6ImFkbWluIn0.fake-token",
+    "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyMmUxOWYyZC05YjJhLTRkMWEtYWE1Ny01Nzc1NDE2MmMzNTQiLCJpYXQiOjE2OTAwMDAwMDAsImV4cCI6MTY5MTAwMDAwMH0.fake-refresh-token",
+    "user": {
+      "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+      "email": "admin@example.com",
+      "firstName": "Admin",
+      "lastName": "User",
+      "role": "admin",
+      "avatarUrl": "https://i.pravatar.cc/150?u=admin@example.com"
+    }
+  },
+  "documentation_categories": [
+    {
+      "id": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+      "name": "Getting Started",
+      "slug": "getting-started",
+      "description": "Essential guides for using our AI platform",
+      "icon": "BookOpen",
+      "order": 1,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "viewAllLink": "/documentation/getting-started",
+      "documents": [
+        { "title": "AI Hub Overview", "link": "/documentation/getting-started/overview" },
+        { "title": "User Access & Permissions", "link": "/documentation/getting-started/access" },
+        { "title": "Quick Start Guide", "link": "/documentation/getting-started/quick-start" }
+      ]
+    },
+    {
+      "id": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+      "name": "AI Models",
+      "slug": "models",
+      "description": "Documentation for our internal AI models",
+      "icon": "FileText",
+      "order": 2,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "viewAllLink": "/documentation/models",
+      "documents": [
+        { "title": "Investment Analysis Model", "link": "/documentation/models/investment-analysis" },
+        { "title": "Market Prediction Model", "link": "/documentation/models/market-prediction" },
+        { "title": "Risk Assessment Model", "link": "/documentation/models/risk-assessment" }
+      ]
+    },
+    {
+      "id": "9a7b3c1e-2f8d-4e5a-9b6c-7d8e9f0a1b2c",
+      "name": "API Reference",
+      "slug": "api-reference",
+      "description": "Technical documentation for API integration",
+      "icon": "FileText",
+      "order": 3,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "viewAllLink": "/documentation/api",
+      "documents": [
+        { "title": "Authentication", "link": "/documentation/api/authentication" },
+        { "title": "Endpoints Reference", "link": "/documentation/api/endpoints" },
+        { "title": "Rate Limits & Quotas", "link": "/documentation/api/rate-limits" }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "title": "Introduction to Project Mariner",
+      "slug": "introduction-to-project-mariner",
+      "categoryId": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+      "category": {
+        "id": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+        "name": "Getting Started",
+        "slug": "getting-started"
+      },
+      "content": "# Introduction to Project Mariner\n\nWelcome to Project Mariner, an enterprise-grade AI platform designed to enhance your research and productivity. This article provides an overview of the platform's capabilities and how to get started.\n\n## What is Project Mariner?\n\nProject Mariner is an AI-powered platform that combines advanced language models with specialized tools for research, documentation, and education. It offers a user-friendly interface for interacting with AI models and accessing curated content.\n\n## Key Features\n\n- AI-powered chat interface\n- Comprehensive documentation\n- Research labs for experimentation\n- Educational resources\n- Specialized AI agents\n\n## Getting Started\n\nTo begin using Project Mariner, simply create an account and explore the different sections of the platform. The AI chat feature is a great place to start asking questions and getting familiar with the system's capabilities.",
+      "summary": "An introduction to the Project Mariner platform and its key features",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "title": "Using the AI Chat Interface",
+      "slug": "using-the-ai-chat-interface",
+      "categoryId": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+      "category": {
+        "id": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+        "name": "Getting Started",
+        "slug": "getting-started"
+      },
+      "content": "# Using the AI Chat Interface\n\nThe AI chat interface is one of the core features of Project Mariner. This guide explains how to get the most out of your interactions with the AI assistant.\n\n## Starting a Conversation\n\nTo start a conversation, navigate to the Chat section and type your question or prompt in the input field at the bottom of the screen. The AI will respond based on its training and the context of your conversation.\n\n## Selecting AI Models\n\nProject Mariner offers several AI models with different capabilities:\n\n- GPT-4: Most capable model for complex tasks\n- GPT-3.5: Fast and efficient for most queries\n- Claude: Specialized for investment analysis\n- Internal LLM: Trained on company data\n\nSelect the appropriate model from the dropdown menu based on your needs.\n\n## Best Practices\n\n- Be specific in your queries\n- Provide context when needed\n- Use follow-up questions to clarify responses\n- Save important conversations for future reference",
+      "summary": "How to use the AI chat interface and get the most out of your conversations",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "3c23f806-5cfe-4fd3-bd1e-c5c1b98d8f95",
+        "firstName": "Editor",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+      "title": "API Integration Guide",
+      "slug": "api-integration-guide",
+      "categoryId": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+      "category": {
+        "id": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+        "name": "API Reference",
+        "slug": "api-reference"
+      },
+      "content": "# API Integration Guide\n\nThis guide explains how to integrate your applications with the Project Mariner API.\n\n## Authentication\n\nAll API requests require authentication using JWT tokens. To obtain a token, make a POST request to the `/api/v1/auth/login` endpoint with your credentials.\n\n```json\n{\n  \"email\": \"your.email@example.com\",\n  \"password\": \"your-password\"\n}\n```\n\nThe response will include an access token and a refresh token:\n\n```json\n{\n  \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR...\",\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsIn...\",\n  \"user\": {\n    \"id\": \"user-id\",\n    \"email\": \"your.email@example.com\",\n    \"firstName\": \"Your\",\n    \"lastName\": \"Name\",\n    \"role\": \"user\"\n  }\n}\n```\n\nInclude the access token in the Authorization header for all subsequent requests:\n\n```\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR...\n```\n\n## Making API Requests\n\nThe API follows RESTful conventions. Resources are accessed via standard HTTP methods:\n\n- GET: Retrieve resources\n- POST: Create new resources\n- PUT: Update existing resources\n- DELETE: Remove resources\n\nResponses are returned in JSON format with appropriate HTTP status codes.\n\n## Error Handling\n\nErrors are returned with appropriate HTTP status codes and a JSON body containing error details:\n\n```json\n{\n  \"code\": \"ERROR_CODE\",\n  \"message\": \"Descriptive error message\"\n}\n```\n\nCommon error codes include:\n\n- 400: Bad Request\n- 401: Unauthorized\n- 403: Forbidden\n- 404: Not Found\n- 422: Validation Error\n- 500: Internal Server Error",
+      "summary": "Guide for integrating with the Project Mariner API",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    }
+  ],
+  "capabilities": [
+    {
+      "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "Text Analysis",
+      "description": "Analyze text for sentiment, entities, and key phrases",
+      "icon": "FileText"
+    },
+    {
+      "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+      "name": "Document Processing",
+      "description": "Extract information from documents and generate summaries",
+      "icon": "FileSearch"
+    },
+    {
+      "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+      "name": "Code Generation",
+      "description": "Generate and explain code in various programming languages",
+      "icon": "Code"
+    },
+    {
+      "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+      "name": "Data Visualization",
+      "description": "Create charts and graphs based on data",
+      "icon": "BarChart"
+    },
+    {
+      "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+      "name": "Research Assistance",
+      "description": "Find and summarize research papers and articles",
+      "icon": "SearchCheck"
+    },
+    {
+      "id": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
+      "name": "Risk Assessment",
+      "description": "Evaluate portfolio risk levels and exposure",
+      "icon": "AlertTriangle"
+    },
+    {
+      "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+      "name": "Diversification Analysis",
+      "description": "Analyze portfolio diversity across sectors and asset classes",
+      "icon": "PieChart"
+    },
+    {
+      "id": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+      "name": "Performance Tracking",
+      "description": "Track and evaluate investment performance metrics",
+      "icon": "TrendingUp"
+    },
+    {
+      "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+      "name": "News Analysis",
+      "description": "Analyze market news and extract relevant insights",
+      "icon": "Newspaper"
+    },
+    {
+      "id": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+      "name": "Trend Identification",
+      "description": "Identify emerging market trends and patterns",
+      "icon": "LineChart"
+    },
+    {
+      "id": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+      "name": "Competitor Tracking",
+      "description": "Track and analyze competitor activities and performance",
+      "icon": "Target"
+    },
+    {
+      "id": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+      "name": "ESG Scoring",
+      "description": "Calculate and analyze ESG scores for investments",
+      "icon": "Award"
+    },
+    {
+      "id": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+      "name": "Sustainability Analysis",
+      "description": "Evaluate sustainability practices and metrics",
+      "icon": "Leaf"
+    },
+    {
+      "id": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+      "name": "Regulatory Compliance",
+      "description": "Ensure investments meet ESG-related regulations",
+      "icon": "CheckSquare"
+    },
+    {
+      "id": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+      "name": "Risk Tolerance Assessment",
+      "description": "Evaluate client risk tolerance levels",
+      "icon": "Activity"
+    },
+    {
+      "id": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+      "name": "Goal-based Planning",
+      "description": "Create financial plans based on client goals",
+      "icon": "Target"
+    },
+    {
+      "id": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+      "name": "Personalized Recommendations",
+      "description": "Generate tailored investment recommendations",
+      "icon": "Gift"
+    },
+    {
+      "id": "8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
+      "name": "Regulation Tracking",
+      "description": "Track and monitor relevant regulatory changes",
+      "icon": "BookOpen"
+    },
+    {
+      "id": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+      "name": "Compliance Verification",
+      "description": "Verify investments comply with regulations",
+      "icon": "Shield"
+    },
+    {
+      "id": "0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+      "name": "Documentation",
+      "description": "Generate compliance documentation and reports",
+      "icon": "FileText"
+    },
+    {
+      "id": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+      "name": "Data Extraction",
+      "description": "Extract key financial data from reports",
+      "icon": "Database"
+    },
+    {
+      "id": "2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
+      "name": "Financial Analysis",
+      "description": "Analyze financial data and metrics",
+      "icon": "DollarSign"
+    }
+  ],
+  "agents": [
+    {
+      "id": "1",
+      "name": "Portfolio Analyzer",
+      "description": "Analyzes investment portfolios for risk, diversification, and performance",
+      "category": "Portfolio Management",
+      "icon": "Bot",
+      "modelId": "gpt-4",
+      "color": "bg-gradient-to-r from-wave-blue to-crest-blue",
+      "capabilities": [
+        {
+          "id": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
+          "name": "Risk assessment",
+          "description": "Evaluate portfolio risk levels and exposure"
+        },
+        {
+          "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+          "name": "Diversification analysis",
+          "description": "Analyze portfolio diversity across sectors and asset classes"
+        },
+        {
+          "id": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+          "name": "Performance tracking",
+          "description": "Track and evaluate investment performance metrics"
+        }
+      ],
+      "usageCount": 245,
+      "lastUsed": "2 hours ago",
+      "isFavorite": true,
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "2",
+      "name": "Market Research Assistant",
+      "description": "Gathers and analyzes market data, news, and trends",
+      "category": "Research",
+      "icon": "Microscope",
+      "modelId": "gpt-4",
+      "color": "bg-gradient-to-r from-seafoam/80 to-seaglass",
+      "capabilities": [
+        {
+          "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+          "name": "News analysis",
+          "description": "Analyze market news and extract relevant insights"
+        },
+        {
+          "id": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+          "name": "Trend identification",
+          "description": "Identify emerging market trends and patterns"
+        },
+        {
+          "id": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+          "name": "Competitor tracking",
+          "description": "Track and analyze competitor activities and performance"
+        }
+      ],
+      "usageCount": 189,
+      "lastUsed": "1 day ago",
+      "isFavorite": false,
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "3",
+      "name": "ESG Evaluator",
+      "description": "Evaluates investments based on Environmental, Social, and Governance criteria",
+      "category": "ESG",
+      "icon": "Leaf",
+      "modelId": "gpt-4",
+      "color": "bg-gradient-to-r from-fog to-heather",
+      "capabilities": [
+        {
+          "id": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+          "name": "ESG scoring",
+          "description": "Calculate and analyze ESG scores for investments"
+        },
+        {
+          "id": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+          "name": "Sustainability analysis",
+          "description": "Evaluate sustainability practices and metrics"
+        },
+        {
+          "id": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+          "name": "Regulatory compliance",
+          "description": "Ensure investments meet ESG-related regulations"
+        }
+      ],
+      "usageCount": 127,
+      "lastUsed": "3 days ago",
+      "isFavorite": true,
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "3c23f806-5cfe-4fd3-bd1e-c5c1b98d8f95",
+        "firstName": "Editor",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Client Profiler with Advanced Personalization and Recommendation Engine",
+      "description": "Creates comprehensive client profiles and investment recommendations",
+      "category": "Client Management",
+      "icon": "Users",
+      "modelId": "gpt-4",
+      "color": "bg-gradient-to-r from-seafoam/70 to-crest-blue/70",
+      "capabilities": [
+        {
+          "id": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+          "name": "Risk tolerance assessment",
+          "description": "Evaluate client risk tolerance levels"
+        },
+        {
+          "id": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+          "name": "Goal-based planning",
+          "description": "Create financial plans based on client goals"
+        },
+        {
+          "id": "7e8f9a0b-1c2d-3e4f-5a6b-7c8d9e0f1a2b",
+          "name": "Personalized recommendations",
+          "description": "Generate tailored investment recommendations"
+        }
+      ],
+      "usageCount": 156,
+      "lastUsed": "5 hours ago",
+      "isFavorite": false,
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "3c23f806-5cfe-4fd3-bd1e-c5c1b98d8f95",
+        "firstName": "Editor",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Regulatory Compliance Checker",
+      "description": "Ensures investment decisions comply with relevant regulations",
+      "category": "Compliance",
+      "icon": "Shield",
+      "modelId": "gpt-4",
+      "color": "bg-gradient-to-r from-coral/60 to-driftwood",
+      "capabilities": [
+        {
+          "id": "8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c",
+          "name": "Regulation tracking",
+          "description": "Track and monitor relevant regulatory changes"
+        },
+        {
+          "id": "9a0b1c2d-3e4f-5a6b-7c8d-9e0f1a2b3c4d",
+          "name": "Compliance verification",
+          "description": "Verify investments comply with regulations"
+        },
+        {
+          "id": "0b1c2d3e-4f5a-6b7c-8d9e-0f1a2b3c4d5e",
+          "name": "Documentation",
+          "description": "Generate compliance documentation and reports"
+        }
+      ],
+      "usageCount": 98,
+      "lastUsed": "2 days ago",
+      "isFavorite": false,
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Financial Report Analyzer",
+      "description": "Extracts and analyzes key information from financial reports",
+      "category": "Research",
+      "icon": "BarChart",
+      "modelId": "gpt-4",
+      "color": "bg-gradient-to-r from-wave-blue/70 to-tidal-blue",
+      "capabilities": [
+        {
+          "id": "1c2d3e4f-5a6b-7c8d-9e0f-1a2b3c4d5e6f",
+          "name": "Data extraction",
+          "description": "Extract key financial data from reports"
+        },
+        {
+          "id": "2d3e4f5a-6b7c-8d9e-0f1a-2b3c4d5e6f7a",
+          "name": "Financial analysis",
+          "description": "Analyze financial data and metrics"
+        },
+        {
+          "id": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+          "name": "Trend identification",
+          "description": "Identify financial trends and patterns"
+        }
+      ],
+      "usageCount": 210,
+      "lastUsed": "1 hour ago",
+      "isFavorite": true,
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    }
+  ],
+  "research_labs": [
+    {
+      "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "name": "Investment Analysis Lab",
+      "description": "Research lab for investment analysis and market trends",
+      "icon": "LineChart",
+      "tools": [
+        {
+          "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+          "name": "Market Analyzer",
+          "description": "Analyze market trends and stock performance"
+        },
+        {
+          "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+          "name": "Portfolio Optimizer",
+          "description": "Optimize investment portfolios for risk and return"
+        }
+      ],
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+      "name": "Natural Language Processing Lab",
+      "description": "Research lab for experimenting with NLP models and techniques",
+      "icon": "MessageSquare",
+      "tools": [
+        {
+          "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+          "name": "Sentiment Analyzer",
+          "description": "Analyze sentiment in text data"
+        },
+        {
+          "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+          "name": "Topic Modeler",
+          "description": "Extract topics from large text corpora"
+        }
+      ],
+      "isPublic": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "createdBy": {
+        "id": "3c23f806-5cfe-4fd3-bd1e-c5c1b98d8f95",
+        "firstName": "Editor",
+        "lastName": "User"
+      }
+    }
+  ],
+  "pagination": {
+    "total": 10,
+    "pages": 1,
+    "page": 0,
+    "limit": 20
+  },
+  "documentation_articles": [
+    {
+      "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+      "title": "Introduction to Project Mariner",
+      "slug": "introduction-to-project-mariner",
+      "categoryId": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+      "category": {
+        "id": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+        "name": "Getting Started",
+        "slug": "getting-started"
+      },
+      "content": "# Introduction to Project Mariner\n\nWelcome to Project Mariner, an enterprise-grade AI platform designed to enhance your research and productivity. This article provides an overview of the platform's capabilities and how to get started.\n\n## What is Project Mariner?\n\nProject Mariner is an AI-powered platform that combines advanced language models with specialized tools for research, documentation, and education. It offers a user-friendly interface for interacting with AI models and accessing curated content.\n\n## Key Features\n\n- AI-powered chat interface\n- Comprehensive documentation\n- Research labs for experimentation\n- Educational resources\n- Specialized AI agents\n\n## Getting Started\n\nTo begin using Project Mariner, simply create an account and explore the different sections of the platform. The AI chat feature is a great place to start asking questions and getting familiar with the system's capabilities.",
+      "summary": "An introduction to the Project Mariner platform and its key features",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "2c3d4e5f-6a7b-8c9d-0e1f-2a3b4c5d6e7f",
+      "title": "Using the AI Chat Interface",
+      "slug": "using-the-ai-chat-interface",
+      "categoryId": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+      "category": {
+        "id": "e8a4d1f2-36b7-48c3-a85e-946d32ff6a9c",
+        "name": "Getting Started",
+        "slug": "getting-started"
+      },
+      "content": "# Using the AI Chat Interface\n\nThe AI chat interface is one of the core features of Project Mariner. This guide explains how to get the most out of your interactions with the AI assistant.\n\n## Starting a Conversation\n\nTo start a conversation, navigate to the Chat section and type your question or prompt in the input field at the bottom of the screen. The AI will respond based on its training and the context of your conversation.\n\n## Selecting AI Models\n\nProject Mariner offers several AI models with different capabilities:\n\n- GPT-4: Most capable model for complex tasks\n- GPT-3.5: Fast and efficient for most queries\n- Claude: Specialized for investment analysis\n- Internal LLM: Trained on company data\n\nSelect the appropriate model from the dropdown menu based on your needs.\n\n## Best Practices\n\n- Be specific in your queries\n- Provide context when needed\n- Use follow-up questions to clarify responses\n- Save important conversations for future reference",
+      "summary": "How to use the AI chat interface and get the most out of your conversations",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "3c23f806-5cfe-4fd3-bd1e-c5c1b98d8f95",
+        "firstName": "Editor",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "3d4e5f6a-7b8c-9d0e-1f2a-3b4c5d6e7f8a",
+      "title": "API Integration Guide",
+      "slug": "api-integration-guide",
+      "categoryId": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+      "category": {
+        "id": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+        "name": "API Reference",
+        "slug": "api-reference"
+      },
+      "content": "# API Integration Guide\n\nThis guide explains how to integrate your applications with the Project Mariner API.\n\n## Authentication\n\nAll API requests require authentication using JWT tokens. To obtain a token, make a POST request to the `/api/v1/auth/login` endpoint with your credentials.\n\n```json\n{\n  \"email\": \"your.email@example.com\",\n  \"password\": \"your-password\"\n}\n```\n\nThe response will include an access token and a refresh token:\n\n```json\n{\n  \"accessToken\": \"eyJhbGciOiJIUzI1NiIsInR...\",\n  \"refreshToken\": \"eyJhbGciOiJIUzI1NiIsIn...\",\n  \"user\": {\n    \"id\": \"user-id\",\n    \"email\": \"your.email@example.com\",\n    \"firstName\": \"Your\",\n    \"lastName\": \"Name\",\n    \"role\": \"user\"\n  }\n}\n```\n\nInclude the access token in the Authorization header for all subsequent requests:\n\n```\nAuthorization: Bearer eyJhbGciOiJIUzI1NiIsInR...\n```\n\n## Making API Requests\n\nThe API follows RESTful conventions. Resources are accessed via standard HTTP methods:\n\n- GET: Retrieve resources\n- POST: Create new resources\n- PUT: Update existing resources\n- DELETE: Remove resources\n\nResponses are returned in JSON format with appropriate HTTP status codes.\n\n## Error Handling\n\nErrors are returned with appropriate HTTP status codes and a JSON body containing error details:\n\n```json\n{\n  \"code\": \"ERROR_CODE\",\n  \"message\": \"Descriptive error message\"\n}\n```\n\nCommon error codes include:\n\n- 400: Bad Request\n- 401: Unauthorized\n- 403: Forbidden\n- 404: Not Found\n- 422: Validation Error\n- 500: Internal Server Error",
+      "summary": "Guide for integrating with the Project Mariner API",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-01T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Admin",
+        "lastName": "User"
+      }
+    },
+    {
+      "id": "ae123f7b-89cd-4e5f-a67b-1c23d4e5f678",
+      "title": "AI Model Evaluation Framework",
+      "slug": "ai-model-evaluation-framework",
+      "categoryId": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+      "category": {
+        "id": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+        "name": "AI Models",
+        "slug": "models"
+      },
+      "content": "# AI Model Evaluation Framework\n\nThis document outlines our standardized framework for evaluating the performance and reliability of AI models used in investment decision-making.",
+      "summary": "This document outlines our standardized framework for evaluating the performance and reliability of AI models used in investment decision-making.",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2025-01-03T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "3c23f806-5cfe-4fd3-bd1e-c5c1b98d8f95",
+        "firstName": "Sarah",
+        "lastName": "Johnson"
+      }
+    },
+    {
+      "id": "bf234a8c-9de0-5f6g-b78c-2d34e5f6g789",
+      "title": "Responsible AI Guidelines",
+      "slug": "responsible-ai-guidelines",
+      "categoryId": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+      "category": {
+        "id": "7f2c8d3e-5b1a-4a96-8735-2c9d85e7b56f",
+        "name": "AI Models",
+        "slug": "models"
+      },
+      "content": "# Responsible AI Guidelines\n\nOur comprehensive guidelines for ensuring ethical and responsible use of AI within the firm, including bias mitigation strategies and transparency requirements.",
+      "summary": "Our comprehensive guidelines for ensuring ethical and responsible use of AI within the firm, including bias mitigation strategies and transparency requirements.",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2024-12-27T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "22e19f2d-9b2a-4d1a-aa57-57754162c354",
+        "firstName": "Michael",
+        "lastName": "Chen"
+      }
+    },
+    {
+      "id": "cg345b9d-0ef1-6g7h-c89d-3e45f6g7h890",
+      "title": "API Integration Examples",
+      "slug": "api-integration-examples",
+      "categoryId": "9a7b3c1e-2f8d-4e5a-9b6c-7d8e9f0a1b2c",
+      "category": {
+        "id": "9a7b3c1e-2f8d-4e5a-9b6c-7d8e9f0a1b2c",
+        "name": "API Reference",
+        "slug": "api-reference"
+      },
+      "content": "# API Integration Examples\n\nCode examples and tutorials for integrating our AI services with internal applications and workflows.",
+      "summary": "Code examples and tutorials for integrating our AI services with internal applications and workflows.",
+      "published": true,
+      "createdAt": "2025-01-01T00:00:00.000Z",
+      "updatedAt": "2024-12-20T00:00:00.000Z",
+      "publishedAt": "2025-01-01T00:00:00.000Z",
+      "author": {
+        "id": "9a1d5e14-d2de-4865-a77e-5793b9b11aca",
+        "firstName": "David",
+        "lastName": "Rodriguez"
+      }
+    }
+  ],
+  "recent_documents": [
+    {
+      "id": "ae123f7b-89cd-4e5f-a67b-1c23d4e5f678",
+      "title": "AI Model Evaluation Framework",
+      "category": "AI Models",
+      "excerpt": "This document outlines our standardized framework for evaluating the performance and reliability of AI models used in investment decision-making.",
+      "updatedAt": "2 days ago",
+      "updatedBy": "Sarah Johnson",
+      "link": "/documentation/models/evaluation-framework"
+    },
+    {
+      "id": "bf234a8c-9de0-5f6g-b78c-2d34e5f6g789",
+      "title": "Responsible AI Guidelines",
+      "category": "Governance",
+      "excerpt": "Our comprehensive guidelines for ensuring ethical and responsible use of AI within the firm, including bias mitigation strategies and transparency requirements.",
+      "updatedAt": "1 week ago",
+      "updatedBy": "Michael Chen",
+      "link": "/documentation/governance/responsible-ai"
+    },
+    {
+      "id": "cg345b9d-0ef1-6g7h-c89d-3e45f6g7h890",
+      "title": "API Integration Examples",
+      "category": "API Reference",
+      "excerpt": "Code examples and tutorials for integrating our AI services with internal applications and workflows.",
+      "updatedAt": "2 weeks ago",
+      "updatedBy": "David Rodriguez",
+      "link": "/documentation/api/integration-examples"
+    }
+  ]
+}
