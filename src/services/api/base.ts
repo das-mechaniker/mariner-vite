@@ -61,6 +61,7 @@ export class BaseApiService {
       method,
       url,
       headers: this.headers,
+      timeout: 5000, // Add a reasonable timeout
       ...(config || {}),
     };
 
@@ -78,28 +79,61 @@ export class BaseApiService {
       const response: AxiosResponse<ApiResponse<T>> = await axios(axiosConfig);
       return response.data;
     } catch (error) {
-      return this.handleError(error as AxiosError<ApiError>);
+      return this.handleError(error);
     }
   }
 
   /**
    * Handle API errors
    */
-  protected handleError(error: AxiosError<ApiError>): never {
-    const status = error.response?.status || 500;
-    const message = error.response?.data?.message || error.message || 'Unknown error occurred';
-    const name = error.response?.data?.name || 'ApiError';
-    const details = error.response?.data?.details || {};
+  protected handleError(error: any): never {
+    let apiError: ApiError;
 
-    const apiError: ApiError = {
-      status,
-      name,
-      message,
-      details,
-    };
+    // Handle Axios errors
+    if (error.isAxiosError) {
+      const axiosError = error as AxiosError<ApiError>;
+      const status = axiosError.response?.status || 500;
+      const message = axiosError.response?.data?.message || axiosError.message || 'Unknown error occurred';
+      const name = axiosError.response?.data?.name || 'ApiError';
+      const details = axiosError.response?.data?.details || {};
 
-    // Log error for debugging
-    console.error('API Error:', apiError);
+      apiError = {
+        status,
+        name,
+        message,
+        details,
+      };
+    } 
+    // Handle network errors
+    else if (error.name === 'NetworkError' || error.message?.includes('Network Error')) {
+      apiError = {
+        status: 503,
+        name: 'NetworkError',
+        message: 'Unable to connect to the server. Please check your connection.',
+        details: { error: error.message },
+      };
+    }
+    // Handle timeout errors
+    else if (error.code === 'ECONNABORTED' || error.message?.includes('timeout')) {
+      apiError = {
+        status: 504,
+        name: 'TimeoutError',
+        message: 'The request timed out. Please try again later.',
+        details: { error: error.message },
+      };
+    }
+    // Handle other errors
+    else {
+      apiError = {
+        status: 500,
+        name: 'UnknownError',
+        message: error.message || 'An unexpected error occurred',
+        details: { originalError: typeof error === 'object' ? JSON.stringify(error) : String(error) },
+      };
+    }
+
+    // Log error for debugging with better formatting
+    console.error('API Error:', JSON.stringify(apiError, null, 2));
 
     // Re-throw for handling in components
     throw apiError;
