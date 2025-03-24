@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "capabilities",
+  "info": {
+    "singularName": "capability",
+    "pluralName": "capabilities",
+    "displayName": "Capability",
+    "description": "AI capabilities for agents"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+} 

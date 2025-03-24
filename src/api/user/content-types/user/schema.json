@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "custom_users",
+  "info": {
+    "singularName": "user",
+    "pluralName": "users",
+    "displayName": "User",
+    "description": "Custom user content type for Project Mariner"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "firstName": {
+      "type": "string",
+      "required": true
+    },
+    "lastName": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "admin",
+        "user"
+      ],
+      "default": "user",
+      "required": true
+    },
+    "avatarUrl": {
+      "type": "string"
+    }
+  }
+} 
