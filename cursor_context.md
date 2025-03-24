@@ -153,3 +153,83 @@ Currently working on setting up the Strapi CMS backend based on the project spec
 2. Run the import script to populate the CMS with mock data
 3. Verify data is imported correctly
 4. Connect the frontend to the Strapi backend API 
+
+# Cursor Context
+
+## Current Implementation Status
+
+### Components
+- Created QuickLinkCard component for navigation shortcuts
+- Created ChatInputPlaceholder component for quick chat functionality
+- Updated Home page to use these components with responsive design
+
+### Working Features
+- The homepage displays with a welcome message, quick link cards to main sections, and a chat input placeholder
+- Responsive design that adapts to different screen sizes
+- Cards link to respective feature sections
+
+### Pending Implementation
+- Actual chat functionality for the input field
+- Improved styling and animations
+- Error handling for navigation links
+
+### Test Status
+- Tests created for QuickLinkCard and ChatInputPlaceholder components
+- Home page tests created with mocked components
+- Some TypeScript errors in other parts of the codebase need to be addressed 
+
+# Project Mariner Context
+
+## Current Implementation Status
+
+### Implemented Features
+1. Core layout components:
+   - Sidebar
+   - Topbar
+   - Layout with responsive design
+2. Basic routing and page structure
+3. Homepage with QuickLink cards and ChatInput placeholder
+4. Agent Library with:
+   - AgentCard component for displaying individual agents
+   - AgentGrid for responsive layout of agent cards
+   - Search functionality by name, description, and category
+   - Favorite toggling capability
+
+### Current Working State
+- Layout and navigation structure is complete
+- Homepage implemented with responsive design
+- Agent Library page is fully functional with:
+  - API integration for fetching agents
+  - Search and filtering functionality
+  - Favorite toggling with real-time UI updates
+  - Comprehensive test coverage
+
+### Current Blockers
+- No major blockers for the implemented features
+- Need to start implementing other main sections (Chat, Documentation, Labs, etc.)
+
+## Next Implementation Plan
+1. Implement Agent Details view
+2. Add category filtering to AgentLibrary
+3. Implement sorting options for agents
+4. Start implementing Documentation section
+5. Implement Labs section
+6. Enhance Chat functionality
+
+## Database/Model State
+The Strapi backend has the following content types:
+- User
+- Agent
+- Documentation Category
+- Documentation Article
+- Research Lab
+- Prompt
+- Capability
+
+## Tech Stack
+- Frontend: React with TypeScript, Vite
+- Styling: Tailwind CSS
+- State Management: React hooks
+- Routing: React Router
+- API Integration: Custom API services with axios
+- Testing: Jest with React Testing Library 

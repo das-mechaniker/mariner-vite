@@ -1,53 +1,84 @@
-import { FaRobot, FaBook, FaFlask, FaListAlt, FaGraduationCap, FaComment } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { FaRobot, FaBook, FaFlask, FaListAlt, FaGraduationCap, FaComment, FaSearch } from 'react-icons/fa';
+import { QuickLinkCard, ChatInputPlaceholder } from '../components/common';
 
 const Home = () => {
   const sections = [
-    { title: 'AI Chat', path: '/chat', icon: <FaComment className="text-4xl mb-2" />, color: 'bg-accent' },
-    { title: 'Agent Library', path: '/agent-library', icon: <FaRobot className="text-4xl mb-2" />, color: 'bg-primary' },
-    { title: 'Documentation', path: '/documentation', icon: <FaBook className="text-4xl mb-2" />, color: 'bg-secondary' },
-    { title: 'Research Labs', path: '/labs', icon: <FaFlask className="text-4xl mb-2" />, color: 'bg-success' },
-    { title: 'Prompt Library', path: '/prompt-library', icon: <FaListAlt className="text-4xl mb-2" />, color: 'bg-warning' },
-    { title: 'Education Hub', path: '/education', icon: <FaGraduationCap className="text-4xl mb-2" />, color: 'bg-danger' },
+    { 
+      title: 'AI Chat', 
+      path: '/chat', 
+      icon: <FaComment className="text-4xl" />, 
+      color: 'bg-accent',
+      description: 'Interact with advanced AI assistants to get instant answers to your questions.'
+    },
+    { 
+      title: 'Agent Library', 
+      path: '/agent-library', 
+      icon: <FaRobot className="text-4xl" />, 
+      color: 'bg-primary',
+      description: 'Explore our collection of specialized AI agents for investment professionals.'
+    },
+    { 
+      title: 'Documentation', 
+      path: '/documentation', 
+      icon: <FaBook className="text-4xl" />, 
+      color: 'bg-secondary',
+      description: 'Access comprehensive documentation on AI tools, techniques, and best practices.'
+    },
+    { 
+      title: 'Research Labs', 
+      path: '/labs', 
+      icon: <FaFlask className="text-4xl" />, 
+      color: 'bg-success',
+      description: 'Discover experimental AI applications and prototypes for investment research.'
+    },
+    { 
+      title: 'Prompt Library', 
+      path: '/prompt-library', 
+      icon: <FaListAlt className="text-4xl" />, 
+      color: 'bg-warning',
+      description: 'Find and share optimized prompts for common investment analysis tasks.'
+    },
+    { 
+      title: 'Education Hub', 
+      path: '/education', 
+      icon: <FaGraduationCap className="text-4xl" />, 
+      color: 'bg-danger',
+      description: 'Learn about AI applications in finance through curated educational resources.'
+    },
+    {
+      title: 'Enterprise Search',
+      path: '/search',
+      icon: <FaSearch className="text-4xl" />,
+      color: 'bg-dark',
+      description: 'Search across all enterprise resources and AI tools in one place.'
+    }
   ];
 
   return (
-    <div className="py-8" data-testid="home-page">
+    <div className="py-8 px-4" data-testid="home-page">
       <div className="text-center mb-12">
         <h1 className="text-4xl font-bold text-dark mb-4">Welcome to Project Mariner</h1>
-        <p className="text-xl text-gray-600">Your centralized platform for AI resources</p>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          Your centralized platform for AI resources, designed to empower investment professionals 
+          with cutting-edge tools, comprehensive documentation, and specialized AI agents.
+        </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
         {sections.map((section, index) => (
-          <Link 
-            key={index} 
-            to={section.path}
-            className="flex flex-col items-center justify-center p-8 rounded-lg shadow-md hover:shadow-lg transition-all bg-white border hover:border-primary"
-          >
-            <div className={`${section.color} p-4 rounded-full text-white mb-4`}>
-              {section.icon}
-            </div>
-            <h2 className="text-xl font-semibold text-dark">{section.title}</h2>
-          </Link>
+          <QuickLinkCard
+            key={index}
+            title={section.title}
+            description={section.description}
+            path={section.path}
+            icon={section.icon}
+            color={section.color}
+          />
         ))}
       </div>
 
-      <div className="mt-12 p-6 bg-white rounded-lg shadow-md">
-        <div className="text-center mb-4">
-          <h2 className="text-2xl font-bold text-dark">Quick Chat</h2>
-          <p className="text-gray-600">Ask a question to get started</p>
-        </div>
-        <div className="flex">
-          <input
-            type="text"
-            placeholder="Type your question here..."
-            className="flex-1 p-3 border rounded-l-md focus:outline-none focus:ring-2 focus:ring-primary"
-          />
-          <button className="bg-primary text-white px-4 py-2 rounded-r-md hover:bg-primary/90">
-            Ask
-          </button>
-        </div>
+      <div className="mt-12 max-w-3xl mx-auto">
+        <ChatInputPlaceholder />
       </div>
     </div>
   );
