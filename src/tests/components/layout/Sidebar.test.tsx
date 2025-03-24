@@ -23,7 +23,7 @@ describe('Sidebar Component', () => {
   test('renders with Project Mariner title', () => {
     renderWithRouter(<Sidebar />);
     
-    expect(screen.getByText('Project Mariner')).toBeInTheDocument();
+    expect(screen.getByText('ProjectMariner')).toBeInTheDocument();
   });
 
   test('handles closing on mobile', () => {

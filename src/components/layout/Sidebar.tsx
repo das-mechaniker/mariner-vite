@@ -67,7 +67,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen = true, onClose }) => {
                     ? 'bg-[#f3f4f6] text-[#1e293b]'
                     : 'text-[#4b5563] hover:bg-[#f9fafb]'
                 }`}
-                onClick={() => window.innerWidth < 1024 && onClose()}
+                onClick={() => window.innerWidth < 1024 && onClose && onClose()}
                 data-testid={`nav-${item.id}`}
               >
                 <span className={`mr-3 w-6 flex items-center justify-center ${isActive ? 'text-[#4b5563]' : 'text-[#6b7280]'}`}>
